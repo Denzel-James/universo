@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <link rel="icon" href="./src/assets/icon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
     <title>Universo</title>
+    <script>
+      if(typeof navgator.serviceWorker !=='undefined'){
+        navigator.serviceWorker.register('pwabuilder-sw.js')
+      }
+    </script>
   </head>
   <body>
     <div id="app"></div>
